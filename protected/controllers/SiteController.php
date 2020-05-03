@@ -77,14 +77,10 @@ class SiteController extends Controller
 	 */
 	public function actionLogin()
 	{
-		$model=new LoginForm;
+		$model=new LoginForm();
 
 		// if it is ajax validation request
-		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
-		{
-			echo CActiveForm::validate($model);
-			Yii::app()->end();
-		}
+
 
 		// collect user input data
 		if(isset($_POST['LoginForm']))
@@ -106,8 +102,5 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
-	public function actionSay($message = 'hello')
-    {
-        return $this->render('Say',['message' => $message]);
-    }
+
 }

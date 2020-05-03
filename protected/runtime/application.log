@@ -127,3 +127,1774 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
 ---
+2020/05/01 06:09:36 [error] [exception.Error] Error: Class 'yii\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:6
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('Say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('Say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 06:10:08 [error] [php] include(Html.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php(6): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(872): SiteController->renderFile()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(785): SiteController->renderPartial()
+#5 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): SiteController->render()
+#6 unknown(0): SiteController->actionSay()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php (6)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (111)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/01 06:10:37 [error] [exception.Error] Error: Class 'yii\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:6
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('Say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('Say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 06:12:49 [error] [exception.Error] Error: Class 'yii\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:6
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('Say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('Say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 06:15:36 [error] [exception.Error] Error: Class 'yii\framwework\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:6
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('Say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('Say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 06:15:56 [error] [exception.Error] Error: Class 'yii\framwework\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:6
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('Say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('Say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 06:15:58 [error] [exception.Error] Error: Class 'yii\framwework\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:6
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('Say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('Say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 06:16:19 [error] [exception.CHttpException.404] CHttpException: The requested view "say" was not found. in C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('say')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/page&view=say
+---
+2020/05/01 06:16:40 [error] [exception.CHttpException.404] CHttpException: The requested view "Say" was not found. in C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php:112
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\actions\CViewAction.php(123): CViewAction->resolveView('Say')
+#1 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(76): CViewAction->run()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CViewAction))
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('page')
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/page&view=Say
+---
+2020/05/01 06:17:09 [error] [exception.Error] Error: Class 'yii\framwework\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:6
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('Say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('Say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('Say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/Say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2FSay&message=Hello+World
+---
+2020/05/01 06:20:53 [error] [php] include(Html.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php(13): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(872): SiteController->renderFile()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(785): SiteController->renderPartial()
+#5 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): SiteController->render()
+#6 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+in C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php (13)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (98)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/01 06:21:58 [error] [exception.Error] Error: Class 'yii\framework\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php:13
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php
+---
+2020/05/01 06:23:33 [error] [exception.Error] Error: Class 'Yii\helpers\Html\Yii' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php
+---
+2020/05/01 06:24:11 [error] [exception.Error] Error: Class 'Yii\helpers\Yii' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php
+---
+2020/05/01 06:24:12 [error] [exception.Error] Error: Class 'Yii\helpers\Yii' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php
+---
+2020/05/01 06:24:13 [error] [exception.Error] Error: Class 'Yii\helpers\Yii' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php
+---
+2020/05/01 06:24:36 [error] [exception.Error] Error: Class 'Yii\helpers\Yii' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php
+---
+2020/05/01 06:24:40 [error] [exception.Error] Error: Class 'Yii\helpers\Yii' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php
+---
+2020/05/01 06:24:41 [error] [exception.Error] Error: Class 'Yii\helpers\Yii' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php
+---
+2020/05/01 06:24:42 [error] [exception.Error] Error: Class 'Yii\helpers\Yii' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php
+---
+2020/05/01 06:25:53 [error] [exception.Error] Error: Class 'yii\helpers\Yii' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php
+---
+2020/05/01 06:26:07 [error] [exception.Error] Error: Class 'yii\helpers\Yii' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#5 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#10 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#11 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php
+---
+2020/05/01 06:35:06 [error] [exception.Error] Error: Class 'yii\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 06:35:09 [error] [exception.Error] Error: Class 'yii\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 06:35:53 [error] [exception.Error] Error: Class 'yii\framework\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 06:41:24 [error] [exception.Error] Error: Class 'yii\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 06:42:09 [error] [exception.Error] Error: Class 'yii\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 06:47:47 [error] [exception.Error] Error: Class 'yii\framework\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 07:02:47 [error] [exception.Error] Error: Class 'yii\framework\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 07:05:55 [error] [exception.Error] Error: Class 'yii\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 07:38:20 [error] [exception.Error] Error: Class 'yii\framework\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 07:44:08 [error] [exception.Error] Error: Class 'yii\framework\helpers\Html' not found in C:\xampp\htdocs\MyLoginapp\protected\views\site\Say.php:7
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require()
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('say', Array, true)
+#4 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(111): CController->render('say', Array)
+#5 [internal function]: SiteController->actionSay('Hello World')
+#6 C:\xampp\htdocs\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(SiteController), Array)
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(SiteController), Object(ReflectionMethod), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('say')
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/say')
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site%2Fsay&message=Hello+World
+---
+2020/05/01 10:08:31 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/01 10:13:51 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/01 10:13:54 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/01 10:14:17 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/01 10:16:54 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/01 10:19:58 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/01 10:23:41 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/01 10:26:30 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 07:58:52 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 08:01:28 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 08:01:29 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 08:04:13 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 08:04:36 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 08:05:12 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 08:05:32 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 08:21:13 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 08:32:58 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(135): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (135)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 08:46:35 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2760): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2483): CHtml::resolveValue(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'users_name', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'users_name', Array)
+#4 C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'users_name')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+---
+2020/05/03 08:46:37 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2760): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2483): CHtml::resolveValue(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'users_name', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'users_name', Array)
+#4 C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'users_name')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+---
+2020/05/03 08:47:26 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2760): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2483): CHtml::resolveValue(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'users_name', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'users_name', Array)
+#4 C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'users_name')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+---
+2020/05/03 08:47:27 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2760): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2483): CHtml::resolveValue(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'users_name', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'users_name', Array)
+#4 C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'users_name')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+---
+2020/05/03 08:47:32 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2760): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2483): CHtml::resolveValue(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'users_name', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'users_name', Array)
+#4 C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'users_name')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=backenduser
+---
+2020/05/03 08:49:37 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2760): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2483): CHtml::resolveValue(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'users_name', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'users_name', Array)
+#4 C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'users_name')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=backenduser
+---
+2020/05/03 08:50:28 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2760): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2483): CHtml::resolveValue(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'users_name', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'users_name', Array)
+#4 C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'users_name')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=backenduser
+---
+2020/05/03 08:50:33 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2760): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2483): CHtml::resolveValue(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'users_name', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'users_name', Array)
+#4 C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'users_name')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=backenduser
+---
+2020/05/03 08:52:15 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2760): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2483): CHtml::resolveValue(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'users_name', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'users_name', Array)
+#4 C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'users_name')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=backenduser
+---
+2020/05/03 09:22:39 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2760): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2483): CHtml::resolveValue(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'users_name', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'users_name', Array)
+#4 C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'users_name')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+---
+2020/05/03 09:23:29 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2760): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2483): CHtml::resolveValue(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'users_name', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'users_name', Array)
+#4 C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'users_name')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+---
+2020/05/03 09:23:33 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2760): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2483): CHtml::resolveValue(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'users_name', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'users_name', Array)
+#4 C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'users_name')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=backenduser
+---
+2020/05/03 09:27:51 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2760): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(2483): CHtml::resolveValue(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(LoginForm), 'users_name', Array)
+#3 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(LoginForm), 'users_name', Array)
+#4 C:\xampp\htdocs\MyLoginapp\protected\views\site\login.php(29): CActiveForm->textField(Object(LoginForm), 'users_name')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(785): CController->renderPartial('login', Array, true)
+#9 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(98): CController->render('login', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=backenduser
+---
+2020/05/03 09:39:12 [warning] [application] Failed to set unsafe attribute "user_name" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 09:39:12 [warning] [application] Failed to set unsafe attribute "user_password" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 09:39:12 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CRequiredValidator.php(58): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#3 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(94): CModel->validate()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=site/login
+---
+2020/05/03 10:14:04 [warning] [application] Failed to set unsafe attribute "user_name" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:14:04 [warning] [application] Failed to set unsafe attribute "user_password" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:14:04 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CRequiredValidator.php(58): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#3 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(94): CModel->validate()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=site/login
+---
+2020/05/03 10:15:41 [warning] [application] Failed to set unsafe attribute "user_name" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:15:41 [warning] [application] Failed to set unsafe attribute "user_password" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:15:41 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CRequiredValidator.php(58): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#3 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(94): CModel->validate()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=site/login
+---
+2020/05/03 10:20:53 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(130): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser/index
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (130)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:21:15 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(130): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser/index
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (130)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:21:16 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(130): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser/index
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (130)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:21:20 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(130): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser/index
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (130)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:21:30 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(130): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser/index
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (130)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:24:32 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(130): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser/index
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (130)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:25:03 [error] [php] Undefined variable: model (C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php:17)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(872): BackenduserController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\CController.php(785): BackenduserController->renderPartial()
+#2 C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php(130): BackenduserController->render()
+#3 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): BackenduserController->actionIndex()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): BackenduserController->runAction()
+#6 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(1148): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(58): BackenduserController->filterAccessControl()
+#9 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(291): CFilterChain->run()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(265): BackenduserController->runActionWithFilters()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): BackenduserController->run()
+#13 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#14 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=backenduser/index
+in C:\xampp\htdocs\MyLoginapp\protected\views\backenduser\index.php (17)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\BackenduserController.php (130)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:30:55 [warning] [application] Failed to set unsafe attribute "user_name" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:30:55 [warning] [application] Failed to set unsafe attribute "user_password" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:30:55 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CRequiredValidator.php(58): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#3 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(94): CModel->validate()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=site/login
+---
+2020/05/03 10:33:24 [warning] [application] Failed to set unsafe attribute "user_name" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:33:24 [warning] [application] Failed to set unsafe attribute "user_password" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:33:24 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CRequiredValidator.php(58): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#3 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(94): CModel->validate()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=site/login
+---
+2020/05/03 10:36:36 [warning] [application] Failed to set unsafe attribute "user_name" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:36:36 [warning] [application] Failed to set unsafe attribute "user_password" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:36:36 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CRequiredValidator.php(58): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#3 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(94): CModel->validate()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=site/login
+---
+2020/05/03 10:44:34 [error] [php] Declaration of LoginForm::validate() should be compatible with CModel::validate($attributes = NULL, $clearErrors = true) (C:\xampp\htdocs\MyLoginapp\protected\models\LoginForm.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(80): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+in C:\xampp\htdocs\MyLoginapp\protected\models\LoginForm.php (8)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (80)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:49:22 [error] [php] Declaration of LoginForm::validate() should be compatible with CModel::validate($attributes = NULL, $clearErrors = true) (C:\xampp\htdocs\MyLoginapp\protected\models\LoginForm.php:8)
+Stack trace:
+#0 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(80): spl_autoload_call()
+#1 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#2 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#4 C:\xampp\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#5 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#6 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\MyLoginapp\index.php(13): CWebApplication->run()
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+in C:\xampp\htdocs\MyLoginapp\protected\models\LoginForm.php (8)
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (80)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:49:48 [warning] [application] Failed to set unsafe attribute "user_name" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:49:48 [warning] [application] Failed to set unsafe attribute "user_password" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:49:48 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CRequiredValidator.php(58): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#3 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(94): CModel->validate()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=site/login
+---
+2020/05/03 10:55:04 [warning] [application] Failed to set unsafe attribute "user_name" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:55:04 [warning] [application] Failed to set unsafe attribute "user_password" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:55:04 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CRequiredValidator.php(58): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#3 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(94): CModel->validate(Object(LoginForm))
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=site/login
+---
+2020/05/03 10:55:42 [warning] [application] Failed to set unsafe attribute "user_name" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:55:42 [warning] [application] Failed to set unsafe attribute "user_password" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:55:42 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CRequiredValidator.php(58): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#3 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(94): CModel->validate()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=site/login
+---
+2020/05/03 10:57:30 [warning] [application] Failed to set unsafe attribute "user_name" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:57:30 [warning] [application] Failed to set unsafe attribute "user_password" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (92)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 10:57:30 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CRequiredValidator.php(58): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#3 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(94): CModel->validate()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=site/login
+---
+2020/05/03 11:00:56 [warning] [application] Failed to set unsafe attribute "user_name" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (88)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 11:00:56 [warning] [application] Failed to set unsafe attribute "user_password" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (88)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 11:00:56 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CRequiredValidator.php(58): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#3 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(90): CModel->validate()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=site/login
+---
+2020/05/03 11:01:04 [warning] [application] Failed to set unsafe attribute "user_name" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (88)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 11:01:04 [warning] [application] Failed to set unsafe attribute "user_password" of "LoginForm".
+in C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php (88)
+in C:\xampp\htdocs\MyLoginapp\index.php (13)
+2020/05/03 11:01:04 [error] [exception.CException] CException: Property "LoginForm.users_name" is not defined. in C:\xampp\htdocs\yii\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CRequiredValidator.php(58): CComponent->__get('users_name')
+#1 C:\xampp\htdocs\yii\framework\validators\CValidator.php(201): CRequiredValidator->validateAttribute(Object(LoginForm), 'users_name')
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), Array)
+#3 C:\xampp\htdocs\MyLoginapp\protected\controllers\SiteController.php(90): CModel->validate()
+#4 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('login')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/login')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\MyLoginapp\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/Myloginapp/index.php?r=site/login
+HTTP_REFERER=http://localhost/Myloginapp/index.php?r=site/login
+---

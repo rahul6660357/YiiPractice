@@ -51,8 +51,15 @@ return array(
 		*/
 
 		// database settings are configured in database.php
-		'db'=>require(dirname(__FILE__).'/database.php'),
+		//'db'=>require(dirname(__FILE__).'/database.php'),
 
+        'db'=>array(
+            'connectionString' => 'mysql:host=localhost:3307;dbname=usermanagement',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+        ),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>YII_DEBUG ? null : 'site/error',

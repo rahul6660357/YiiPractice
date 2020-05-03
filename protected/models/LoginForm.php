@@ -7,8 +7,8 @@
  */
 class LoginForm extends CFormModel
 {
-	public $username;
-	public $password;
+	public $user_name;
+	public $user_password;
 	public $rememberMe;
 
 	private $_identity;
@@ -22,11 +22,11 @@ class LoginForm extends CFormModel
 	{
 		return array(
 			// username and password are required
-			array('username, password', 'required'),
+			array('user_name, user_password', 'required'),
 			// rememberMe needs to be a boolean
 			array('rememberMe', 'boolean'),
 			// password needs to be authenticated
-			array('password', 'authenticate'),
+			array('user_password', 'authenticate'),
 		);
 	}
 
@@ -48,12 +48,28 @@ class LoginForm extends CFormModel
 	 */
 	public function authenticate($attribute,$params)
 	{
-		if(!$this->hasErrors())
-		{
-			$this->_identity=new UserIdentity($this->username,$this->password);
-			if(!$this->_identity->authenticate())
-				$this->addError('password','Incorrect username or password.');
-		}
+
+		$users_name = $this->user_name;
+		$model = new backenduser();
+		$user = backenduser::model()->find(array(
+		    'select'=>['users_id','users_name','users_email','users_password'],
+            'condition'=>'users_name="' .$users_name. '"',
+        ));
+		if($user === null)
+        {
+            echo '<script>alert("Login failed Invalid username")</script>';
+        }
+		else if($user->users_password === $this->user_password)
+        {
+          $url = "http://localhost/Myloginapp/index.php?r=backenduser/view&id=".($user->users_id);
+          header("Location:$url");
+        }
+		else{
+            echo '<script>alert("Login failed Invalid Password")</script>';
+        }
+
+
+
 	}
 
 	/**
@@ -64,7 +80,7 @@ class LoginForm extends CFormModel
 	{
 		if($this->_identity===null)
 		{
-			$this->_identity=new UserIdentity($this->username,$this->password);
+			$this->_identity=new UserIdentity($this->user_name,$this->user_password);
 			$this->_identity->authenticate();
 		}
 		if($this->_identity->errorCode===UserIdentity::ERROR_NONE)
@@ -76,4 +92,6 @@ class LoginForm extends CFormModel
 		else
 			return false;
 	}
+
+
 }
